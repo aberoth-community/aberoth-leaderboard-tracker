@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { google } from 'googleapis'
-import { LEADERBOARD_MORE_URL, LEADERBOARD_URL, fetchChampions, googleLogin, range } from '../src/index.js'
+import { LEADERBOARD_MORE_URL, LEADERBOARD_URL, createRange, fetchChampions, googleLogin } from '../src/index.js'
 
 // Main
 ;(async () => {
@@ -36,7 +36,7 @@ import { LEADERBOARD_MORE_URL, LEADERBOARD_URL, fetchChampions, googleLogin, ran
     })
 
     return typeof resIndex.data.values !== 'undefined'
-      ? range(resIndex.data.values[0].length + 1)
+      ? createRange(resIndex.data.values[0].length + 1)
       : 'A'
   }
 

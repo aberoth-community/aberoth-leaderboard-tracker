@@ -1,4 +1,4 @@
-export { diffChampions, fetchChampions, googleLogin, range } from './aberoth-leaderboard-tracker.js'
+export { createRange, diffChampions, fetchChampions, googleLogin } from './aberoth-leaderboard-tracker.js'
 
 /**
  * Leaderboard url *First 10k*

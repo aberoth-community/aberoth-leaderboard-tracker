@@ -18,11 +18,11 @@ import { JSDOM } from 'jsdom'
  * @returns {string}
  * @public
  */
-export const range = (i) => {
+export const createRange = (i) => {
   const mod = i % 26
   let pow = i / 26 | 0
   const out = mod ? String.fromCharCode(64 + mod) : (--pow, 'Z')
-  return pow ? range(pow) + out : out
+  return pow ? createRange(pow) + out : out
 }
 
 /**
