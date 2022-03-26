@@ -1,4 +1,4 @@
-import { LEADERBOARD_MORE_URL, LEADERBOARD_URL, fetchChampions, diffChampions } from '../index.js'
+import { LEADERBOARD_MORE_URL, LEADERBOARD_URL, createRange, fetchChampions, diffChampions } from '../index.js'
 
 /**
  * Champions
@@ -26,6 +26,18 @@ describe('Fetch champions', () => {
     expect(
       champions.some((c) => c[0].charAt(0).toUpperCase() !== c[0].charAt(0))
     ).toBe(false)
+  })
+})
+
+describe('Create range', () => {
+  test('1 should be "A"', () => {
+    expect(createRange(1)).toBe('A')
+  })
+  test('26 should be "Z"', () => {
+    expect(createRange(26)).toBe('Z')
+  })
+  test('27 should be "AA"', () => {
+    expect(createRange(27)).toBe('AA')
   })
 })
 
