@@ -1,3 +1,9 @@
+.vs*
+.idea
+
+secret.json
+token.json
+
 # Logs
 logs
 *.log

@@ -1,0 +1,56 @@
+{
+  "name": "aberoth-leaderboard-tracker",
+  "version": "0.2.0",
+  "description": "Aberoth leaderboard tracking",
+  "bin": "bin/index.js",
+  "main": "bin/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config .",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "no-unused-vars": 0
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashnel3/aberoth-leaderboard-tracker.git"
+  },
+  "keywords": [
+    "aberoth",
+    "rpg"
+  ],
+  "author": "ashnel3",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/ashnel3/aberoth-leaderboard-tracker/issues"
+  },
+  "homepage": "https://github.com/ashnel3/aberoth-leaderboard-tracker#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "googleapis": "^97.0.0",
+    "jsdom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.11.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^27.5.1"
+  }
+}

@@ -1,0 +1,5 @@
+* text=auto
+
+*.md   text eol=lf diff=markdown
+*.js   text eol=lf
+*.json text eol=lf
